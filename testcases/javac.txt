@@ -1,0 +1,17 @@
+long_and_mnemonic_identifier
+longAndMnemonicIdentifier
+javaIdentifier
+java_identifier
+anotherExample
+another_example
+i
+bad_Style
+BadStyle
+c_identifier
+cIdentifier
+name
+n_e_e_r_c
+nEERC
+_
+TEST
+test_
