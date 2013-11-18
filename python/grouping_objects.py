@@ -47,7 +47,7 @@ def solve(k, x):
         min_cost = None
         min_idx = None
         for idx in range(len(groups) - 1):
-            cost = merge_cost(groups[idx] + groups[idx + 1])
+            cost = merge_cost(groups[idx] + groups[idx + 1]) - merge_cost(groups[idx]) - merge_cost(groups[idx + 1])
             if min_cost is None or cost < min_cost:
                 min_cost = cost
                 min_idx = idx
@@ -74,7 +74,7 @@ assert 0 == solve(6, [0, 17, 22, 24, 33, 36])
 assert 2 == solve(5, [0, 17, 22, 24, 33, 36])
 assert 5 == solve(4, [0, 17, 22, 24, 33, 36])
 assert 10 == solve(3, [0, 17, 22, 24, 33, 36])
-assert 32 == solve(2, [0, 17, 22, 24, 33, 36])
+assert 30 == solve(2, [0, 17, 22, 24, 33, 36])
 assert 54 == solve(1, [0, 17, 22, 24, 33, 36])
 assert 0 == solve(4, [3, 3, 3, 3])
 assert 0 == solve(3, [3, 3, 3, 3])
